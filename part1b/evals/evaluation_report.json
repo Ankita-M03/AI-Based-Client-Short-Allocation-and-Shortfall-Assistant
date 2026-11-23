@@ -1,0 +1,573 @@
+{
+  "case_count": 15,
+  "aggregate_score": 100.0,
+  "aggregate_score_minimum": 85,
+  "understandable_actionable_rate": 100.0,
+  "understandable_actionable_rate_minimum": 85,
+  "reviewer_ratings_pending_count": 0,
+  "reviewer_ratings_complete": true,
+  "hard_guards": {
+    "valid_schema": true,
+    "calculation_correctness": true,
+    "clarification_behavior": true,
+    "grounded_explanations": true
+  },
+  "passed": true,
+  "cases": [
+    {
+      "id": "normal-basic-cash",
+      "score": 100.0,
+      "layers": {
+        "layer1_structural": {
+          "passed": true,
+          "errors": []
+        },
+        "layer2_invariants": {
+          "passed": true,
+          "checks": {
+            "slab_matches_shortfall": true,
+            "severity_matches_slab": true,
+            "expected_fields_match": true,
+            "clarification_consistent": true
+          }
+        },
+        "layer3_semantic": {
+          "passed": true,
+          "results": {
+            "explanation_must_cover": [
+              true,
+              true
+            ],
+            "explanation_must_not_claim": [
+              true
+            ],
+            "remediation_must_cover": [
+              true
+            ]
+          }
+        }
+      },
+      "calculation_correct": true,
+      "fact_extraction_score": 100.0,
+      "clarification_correct": true
+    },
+    {
+      "id": "normal-with-grace",
+      "score": 100.0,
+      "layers": {
+        "layer1_structural": {
+          "passed": true,
+          "errors": []
+        },
+        "layer2_invariants": {
+          "passed": true,
+          "checks": {
+            "slab_matches_shortfall": true,
+            "severity_matches_slab": true,
+            "expected_fields_match": true,
+            "clarification_consistent": true
+          }
+        },
+        "layer3_semantic": {
+          "passed": true,
+          "results": {
+            "explanation_must_cover": [
+              true,
+              true
+            ],
+            "explanation_must_not_claim": [
+              true
+            ],
+            "remediation_must_cover": [
+              true
+            ]
+          }
+        }
+      },
+      "calculation_correct": true,
+      "fact_extraction_score": 100.0,
+      "clarification_correct": true
+    },
+    {
+      "id": "zero-grace-no-shortfall",
+      "score": 100.0,
+      "layers": {
+        "layer1_structural": {
+          "passed": true,
+          "errors": []
+        },
+        "layer2_invariants": {
+          "passed": true,
+          "checks": {
+            "slab_matches_shortfall": true,
+            "severity_matches_slab": true,
+            "expected_fields_match": true,
+            "clarification_consistent": true
+          }
+        },
+        "layer3_semantic": {
+          "passed": true,
+          "results": {
+            "explanation_must_cover": [
+              true,
+              true
+            ],
+            "explanation_must_not_claim": [
+              true
+            ],
+            "remediation_must_cover": [
+              true
+            ]
+          }
+        }
+      },
+      "calculation_correct": true,
+      "fact_extraction_score": 100.0,
+      "clarification_correct": true
+    },
+    {
+      "id": "grace-exactly-offsets",
+      "score": 100.0,
+      "layers": {
+        "layer1_structural": {
+          "passed": true,
+          "errors": []
+        },
+        "layer2_invariants": {
+          "passed": true,
+          "checks": {
+            "slab_matches_shortfall": true,
+            "severity_matches_slab": true,
+            "expected_fields_match": true,
+            "clarification_consistent": true
+          }
+        },
+        "layer3_semantic": {
+          "passed": true,
+          "results": {
+            "explanation_must_cover": [
+              true,
+              true
+            ],
+            "explanation_must_not_claim": [
+              true
+            ],
+            "remediation_must_cover": [
+              true
+            ]
+          }
+        }
+      },
+      "calculation_correct": true,
+      "fact_extraction_score": 100.0,
+      "clarification_correct": true
+    },
+    {
+      "id": "grace-exceeds-shortfall",
+      "score": 100.0,
+      "layers": {
+        "layer1_structural": {
+          "passed": true,
+          "errors": []
+        },
+        "layer2_invariants": {
+          "passed": true,
+          "checks": {
+            "slab_matches_shortfall": true,
+            "severity_matches_slab": true,
+            "expected_fields_match": true,
+            "clarification_consistent": true
+          }
+        },
+        "layer3_semantic": {
+          "passed": true,
+          "results": {
+            "explanation_must_cover": [
+              true,
+              true
+            ],
+            "explanation_must_not_claim": [
+              true
+            ],
+            "remediation_must_cover": [
+              true
+            ]
+          }
+        }
+      },
+      "calculation_correct": true,
+      "fact_extraction_score": 100.0,
+      "clarification_correct": true
+    },
+    {
+      "id": "slab-boundary-100000",
+      "score": 100.0,
+      "layers": {
+        "layer1_structural": {
+          "passed": true,
+          "errors": []
+        },
+        "layer2_invariants": {
+          "passed": true,
+          "checks": {
+            "slab_matches_shortfall": true,
+            "severity_matches_slab": true,
+            "expected_fields_match": true,
+            "clarification_consistent": true
+          }
+        },
+        "layer3_semantic": {
+          "passed": true,
+          "results": {
+            "explanation_must_cover": [
+              true
+            ],
+            "explanation_must_not_claim": [
+              true
+            ],
+            "remediation_must_cover": [
+              true
+            ]
+          }
+        }
+      },
+      "calculation_correct": true,
+      "fact_extraction_score": 100.0,
+      "clarification_correct": true
+    },
+    {
+      "id": "slab-boundary-100000-01",
+      "score": 100.0,
+      "layers": {
+        "layer1_structural": {
+          "passed": true,
+          "errors": []
+        },
+        "layer2_invariants": {
+          "passed": true,
+          "checks": {
+            "slab_matches_shortfall": true,
+            "severity_matches_slab": true,
+            "expected_fields_match": true,
+            "clarification_consistent": true
+          }
+        },
+        "layer3_semantic": {
+          "passed": true,
+          "results": {
+            "explanation_must_cover": [
+              true,
+              true
+            ],
+            "explanation_must_not_claim": [
+              true
+            ],
+            "remediation_must_cover": [
+              true
+            ]
+          }
+        }
+      },
+      "calculation_correct": true,
+      "fact_extraction_score": 100.0,
+      "clarification_correct": true
+    },
+    {
+      "id": "slab-boundary-1000000",
+      "score": 100.0,
+      "layers": {
+        "layer1_structural": {
+          "passed": true,
+          "errors": []
+        },
+        "layer2_invariants": {
+          "passed": true,
+          "checks": {
+            "slab_matches_shortfall": true,
+            "severity_matches_slab": true,
+            "expected_fields_match": true,
+            "clarification_consistent": true
+          }
+        },
+        "layer3_semantic": {
+          "passed": true,
+          "results": {
+            "explanation_must_cover": [
+              true
+            ],
+            "explanation_must_not_claim": [
+              true
+            ],
+            "remediation_must_cover": [
+              true
+            ]
+          }
+        }
+      },
+      "calculation_correct": true,
+      "fact_extraction_score": 100.0,
+      "clarification_correct": true
+    },
+    {
+      "id": "slab-boundary-1000000-01",
+      "score": 100.0,
+      "layers": {
+        "layer1_structural": {
+          "passed": true,
+          "errors": []
+        },
+        "layer2_invariants": {
+          "passed": true,
+          "checks": {
+            "slab_matches_shortfall": true,
+            "severity_matches_slab": true,
+            "expected_fields_match": true,
+            "clarification_consistent": true
+          }
+        },
+        "layer3_semantic": {
+          "passed": true,
+          "results": {
+            "explanation_must_cover": [
+              true,
+              true
+            ],
+            "explanation_must_not_claim": [
+              true
+            ],
+            "remediation_must_cover": [
+              true
+            ]
+          }
+        }
+      },
+      "calculation_correct": true,
+      "fact_extraction_score": 100.0,
+      "clarification_correct": true
+    },
+    {
+      "id": "ambiguous-complaint",
+      "score": 100.0,
+      "layers": {
+        "layer1_structural": {
+          "passed": true,
+          "errors": []
+        },
+        "layer2_invariants": {
+          "passed": true,
+          "checks": {
+            "slab_matches_shortfall": true,
+            "severity_matches_slab": true,
+            "expected_fields_match": true,
+            "clarification_consistent": true
+          }
+        },
+        "layer3_semantic": {
+          "passed": true,
+          "results": {
+            "explanation_must_cover": [
+              true,
+              true,
+              true
+            ],
+            "explanation_must_not_claim": [
+              true
+            ],
+            "remediation_must_cover": [
+              true
+            ]
+          }
+        }
+      },
+      "calculation_correct": true,
+      "fact_extraction_score": 100.0,
+      "clarification_correct": true
+    },
+    {
+      "id": "missing-member-code",
+      "score": 100.0,
+      "layers": {
+        "layer1_structural": {
+          "passed": true,
+          "errors": []
+        },
+        "layer2_invariants": {
+          "passed": true,
+          "checks": {
+            "slab_matches_shortfall": true,
+            "severity_matches_slab": true,
+            "expected_fields_match": true,
+            "clarification_consistent": true
+          }
+        },
+        "layer3_semantic": {
+          "passed": true,
+          "results": {
+            "explanation_must_cover": [
+              true,
+              true
+            ],
+            "explanation_must_not_claim": [
+              true
+            ],
+            "remediation_must_cover": [
+              true
+            ]
+          }
+        }
+      },
+      "calculation_correct": true,
+      "fact_extraction_score": 100.0,
+      "clarification_correct": true
+    },
+    {
+      "id": "missing-segment",
+      "score": 100.0,
+      "layers": {
+        "layer1_structural": {
+          "passed": true,
+          "errors": []
+        },
+        "layer2_invariants": {
+          "passed": true,
+          "checks": {
+            "slab_matches_shortfall": true,
+            "severity_matches_slab": true,
+            "expected_fields_match": true,
+            "clarification_consistent": true
+          }
+        },
+        "layer3_semantic": {
+          "passed": true,
+          "results": {
+            "explanation_must_cover": [
+              true,
+              true
+            ],
+            "explanation_must_not_claim": [
+              true
+            ],
+            "remediation_must_cover": [
+              true
+            ]
+          }
+        }
+      },
+      "calculation_correct": true,
+      "fact_extraction_score": 100.0,
+      "clarification_correct": true
+    },
+    {
+      "id": "malformed-amount",
+      "score": 100.0,
+      "layers": {
+        "layer1_structural": {
+          "passed": true,
+          "errors": []
+        },
+        "layer2_invariants": {
+          "passed": true,
+          "checks": {
+            "slab_matches_shortfall": true,
+            "severity_matches_slab": true,
+            "expected_fields_match": true,
+            "clarification_consistent": true
+          }
+        },
+        "layer3_semantic": {
+          "passed": true,
+          "results": {
+            "explanation_must_cover": [
+              true,
+              true
+            ],
+            "explanation_must_not_claim": [
+              true
+            ],
+            "remediation_must_cover": [
+              true
+            ]
+          }
+        }
+      },
+      "calculation_correct": true,
+      "fact_extraction_score": 100.0,
+      "clarification_correct": true
+    },
+    {
+      "id": "negative-margin",
+      "score": 100.0,
+      "layers": {
+        "layer1_structural": {
+          "passed": true,
+          "errors": []
+        },
+        "layer2_invariants": {
+          "passed": true,
+          "checks": {
+            "slab_matches_shortfall": true,
+            "severity_matches_slab": true,
+            "expected_fields_match": true,
+            "clarification_consistent": true
+          }
+        },
+        "layer3_semantic": {
+          "passed": true,
+          "results": {
+            "explanation_must_cover": [
+              true,
+              true
+            ],
+            "explanation_must_not_claim": [
+              true
+            ],
+            "remediation_must_cover": [
+              true
+            ]
+          }
+        }
+      },
+      "calculation_correct": true,
+      "fact_extraction_score": 100.0,
+      "clarification_correct": true
+    },
+    {
+      "id": "adversarial-instruction-injection",
+      "score": 100.0,
+      "layers": {
+        "layer1_structural": {
+          "passed": true,
+          "errors": []
+        },
+        "layer2_invariants": {
+          "passed": true,
+          "checks": {
+            "slab_matches_shortfall": true,
+            "severity_matches_slab": true,
+            "expected_fields_match": true,
+            "clarification_consistent": true
+          }
+        },
+        "layer3_semantic": {
+          "passed": true,
+          "results": {
+            "explanation_must_cover": [
+              true
+            ],
+            "explanation_must_not_claim": [
+              true,
+              true,
+              true
+            ],
+            "remediation_must_cover": [
+              true
+            ]
+          }
+        }
+      },
+      "calculation_correct": true,
+      "fact_extraction_score": 100.0,
+      "clarification_correct": true
+    }
+  ]
+}
